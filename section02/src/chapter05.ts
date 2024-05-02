@@ -2,9 +2,11 @@
 // 여러가지 값들에 각각 이름을 부여해 열거해두고 사용하는 타입 
 // 타입스크립트에만 존재함 
 
+
 // Enum은 순서가 없는 자료구조, 키에 값이 할당된다. 
 // 값을 따로 지정하지 않으면 자동으로 숫자를 할당 한다. 
 // 기본값은 0 
+// 코드내에서 의도를 명확하게 표현하거나, 명확히 구분되는 여러요소를 관리하기 위해서 사용
 enum Role {
   ADMIN,
   USER,
@@ -33,6 +35,4 @@ const enum StatusCodes {
   PaymentRequired,
 }
 
-let statusCodes = [StatusCodes.Ok, StatusCodes.BadRequest ]
-
-// 코드내에서 의도를 명확하게 표현하거나, 명확히 구분되는 여러요소를 관리하기 위해서 사용
+let statusCodes = [StatusCodes.Ok, StatusCodes.BadRequest ]  // let statusCodes = [200 /* StatusCodes.Ok */, 400 /* StatusCodes.BadRequest */];
